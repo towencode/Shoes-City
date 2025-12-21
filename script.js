@@ -6,3 +6,15 @@ navbarToggle.addEventListener("click", () => {
     navbarToggle.classList.toggle(`navbar__toggle--active`);
     navbarMenu.classList.toggle(`navbar__menu--active`);
 });
+
+/*      NAVBAR ACTIVE LINK       */
+
+const navbarLinks = document.querySelectorAll(".navbar .navbar__menu-link");
+
+navbarLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navbarLinks.forEach(item => item.classList.remove("navbar__menu-link--active"));
+
+        link.classList.add("navbar__menu-link--active");
+    });
+});
