@@ -1,0 +1,53 @@
+[33mcommit 03a5d062230923b4ae771a07abdc97a1fd9772cd[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Towen Code <towencode@gmail.com>
+Date:   Mon Dec 22 16:36:17 2025 -0800
+
+    menu and categories Updated
+
+[33mcommit 37d4aafc5be332f6bf19c7d127b874392bd8b336[m
+Author: Towen Code <towencode@gmail.com>
+Date:   Mon Dec 22 03:07:36 2025 -0800
+
+    categories added
+
+[33mcommit e0b149c840448a2a3620410c18ba92c30128cfc2[m
+Author: Towen Code <towencode@gmail.com>
+Date:   Sun Dec 21 02:30:29 2025 -0800
+
+    add active state to links and animated border
+
+[33mcommit 7a714ffdd922870ece7b1233bda764b5a3aef0e5[m
+Author: Towen Code <towencode@gmail.com>
+Date:   Sat Dec 20 02:36:41 2025 -0800
+
+    java script added and and navbar__toggle and navbar__menu updated
+
+[33mcommit 9aa4c9256c6b84e09327e4c9081c82be427f6c25[m
+Author: Towen Code <towencode@gmail.com>
+Date:   Fri Dec 19 03:22:18 2025 -0800
+
+    media max-width: 800px added
+
+[33mcommit cea0ab6d6a178e7551acf0272e5be4239b23cacc[m
+Author: Towen Code <towencode@gmail.com>
+Date:   Thu Dec 18 01:53:30 2025 -0800
+
+    Menu added
+
+[33mcommit aa9e34ebcf1a4d98548e31c81d2598e3206f8327[m
+Author: Towen Code <towencode@gmail.com>
+Date:   Wed Dec 17 01:18:12 2025 -0800
+
+    hero section added
+
+[33mcommit 3742ef780957f51a4a71f44196681d1ca66d146c[m
+Author: Towen Code <towencode@gmail.com>
+Date:   Tue Dec 16 02:26:21 2025 -0800
+
+    pictures added
+
+[33mcommit 8789284b057a0d0f1082fa74575fefe95a41528e[m
+Author: Towen Code <towencode@gmail.com>
+Date:   Mon Dec 15 02:24:15 2025 -0800
+
+    site header added.

@@ -9,7 +9,7 @@
 }
 
 body {
-    background: hsl(0, 0%, 100%);
+    background: hsl(230, 18%, 40%);
 }
 
 /*      NAVBAR STYLEING     */
@@ -22,7 +22,7 @@ body {
     height: 60px;
     position: sticky;
     top: 0;
-    background: hsl(0, 0%, 100%);
+    background: hsl(246, 18%, 53%);
     /*box-shadow: 3px 3px 10px rgb(83, 77, 77);*/
     z-index: 999;
 }
@@ -225,7 +225,7 @@ body {
 /*      PRODUCT STYLEING        */
 
 .product-section {
-    background: hsl(0, 0%, 100%);
+    background: hsl(246, 18%, 53%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -321,7 +321,7 @@ body {
 /* CATEGORIES STYLEING      */
 
 .categories-section {
-    background:  hsl(0, 0%, 100%);
+    background: hsl(246, 18%, 53%);
     display: flex;
     flex-direction: column;
     align-items: center;
