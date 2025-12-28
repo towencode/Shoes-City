@@ -7,6 +7,8 @@
         <title>Shoes City</title>
         <link rel="stylesheet" href="style.css">
         <link rel="Website icon" href="pictures/hero-picture.jpg.jpg">
+        <script src="script.js" defer ></script>
+        <script src="https://kit.fontawesome.com/b5ca4bb704.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -214,19 +216,27 @@
              <section class="about-section" id="about">
                 <ul class="about">
                     <li class="about__item">
-                        <img src="pictures/about-image.jpg" alt="Running with our shoes" >
+                        <img src="pictures/about-image.jpg" alt="Running with our shoes" class="about__image">
                     </li>
-                    <li class="about__item">
+                    <li class="about__item about__info">
                         <h2 class="about__title">About</h2>
                         <p class="about__text">
                             Shoes City is your destination for modern and comfortable footwear.
                             We bring you the latest styles in sports and casual shoes, designed for everyday life.
                         </p>
                         <div class="about__logos">
-                            <i class="about__logo fa-brands fa-instagram"></i>
-                            <i class="about__logo fa-brands fa-facebook-f"></i>
-                            <i class="about__logo fa-brands fa-telegram"></i>
-                            <i class="about__logo fa-brands fa-square-x-twitter"></i>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram about__logo-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f about__logo-facebook"></i>
+                            </a>                            
+                            <a href="#">
+                                <i class="fa-brands fa-telegram about__logo-telegram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-square-x-twitter about__logo-x-twitter"></i>
+                            </a>
                         </div>
                     </li>
                 </ul>
@@ -265,16 +275,20 @@
                 <form action="" id="form" class="contact-form">
                     <div class="form__field">
                         <label for="username">
-                            <i class="form__logo fa-solid fa-user"></i>
+                            <i class="fa-solid fa-user form__logo"></i>
                         </label>
                         <input type="text" id="username" class="form__input" placeholder="Your Name" required>
                     </div>
                     <div class="form__field">
-                        <label for="email"><i class="form__logo fa-regular fa-envelope"></i></label>
+                        <label for="email">
+                            <i class="fa-regular fa-envelope form__logo"></i>
+                        </label>
                         <input type="email" id="email" class="form__input" placeholder="Your Email" required>
                     </div>
                     <div class="form__field">
-                        <label for="comment"><i class="form__logo fa-solid fa-comment"></i></label>
+                        <label for="comment">
+                            <i class="fa-solid fa-comment form__logo"></i>
+                        </label>
                         <textarea name="user-comment" id="comment" class="form__textarea" placeholder="Your Message"></textarea>
                     </div>
                     <div class="form__field">
@@ -285,8 +299,34 @@
              </section>
 
         </main>
-        <script src="https://kit.fontawesome.com/b5ca4bb704.js" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+
+        <!-- Footer Website -->
+        <footer class="footer-section">
+            <ul class="footer">
+                    <li class="footer__item footer__copyright-text">© Shoe Shop</li>
+
+                    <li class="footer__item footer__logos">
+                        <a href="#">
+                                <i class="fa-brands fa-instagram footer__logo-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f footer__logo-facebook"></i>
+                            </a>                            
+                            <a href="#">
+                                <i class="fa-brands fa-telegram footer__logo-telegram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-square-x-twitter footer__logo-x-twitter"></i>
+                            </a>
+                    </li>
+                    <li class="footer__item footer__links">
+                        <a href="#" class="footer__links-Privacy">Privacy policy</a>
+                        <span class="footer__policy-text-separator">•</span>
+                        <a href="#" class="footer__links-Refund">Refund policy</a>
+                    </li>
+                </ul>
+        </footer>
+        
     </body>
 
 </html>
