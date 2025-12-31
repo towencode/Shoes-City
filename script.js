@@ -18,3 +18,14 @@ navbarLinks.forEach(link => {
         link.classList.add("navbar__menu-link--active");
     });
 });
+
+/*      SLIDEBAR TOGGLE     */
+
+const Slidbar = document.querySelector(".slidebar");
+const SlidebarBtn = document.querySelector(".slidebar-toggle");
+
+SlidebarBtn.addEventListener("click", () => {
+    SlidebarBtn.classList.toggle("slidebar-toggle--active");
+    Slidbar.classList.toggle("slidebar--active");
+
+})
