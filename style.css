@@ -146,10 +146,10 @@ body {
     gap: 10px;
     width: 100%;
     height: 70px;
-    max-width: 500px;
+    max-width: 520px;
     position: sticky;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 999;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -187,8 +187,14 @@ body {
     padding: 8px;
     margin: 0 5px;
     background: transparent;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 20px;
+}
+
+.slidebar-navbar__link--acitve {
+     background: #2f3542;
+    color: #00a8ff;
+    border-color: gray;
 }
 
 .slidebar-toggle {
@@ -225,7 +231,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: hsl(0, 0%, 100%);
 }
 
@@ -243,6 +249,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .hero__title {
@@ -298,7 +305,6 @@ body {
     width: 100%;
     max-width: 500px;
 }
-
 .hero__image {
     width: 100%;
 }
@@ -321,6 +327,7 @@ body {
     font-size: 1.8rem;
     font-weight: 800;
     color: #000000;
+    margin-top: 1rem;
 }
 
 .product-title::after {
@@ -510,9 +517,8 @@ body {
     justify-content: center;
     gap: 1rem;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: hsl(0, 0%, 100%);
-    z-index: 999;
 }
 
 .about {
@@ -524,7 +530,6 @@ body {
     background: hsl(0, 0%, 100%);
     width: 100%;
     max-width: 1400px;
-    margin: 0 2rem;
     padding: 10px 10px;
 }
 
@@ -767,8 +772,29 @@ body {
     color: #fff;
 }
 
+@media (max-width: 1000px) {
+    .form__input {
+        width: 500px;
+    }
+
+    .form__textarea {
+        width: 500px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about__info  {
+        width: 500px;
+    }
+}
 
 @media (max-width: 800px) {
+    .navbar__menu {
+        display: none;
+    }
+    /*
     .navbar__menu {
         flex-direction: column;
         align-items: flex-start;
@@ -815,13 +841,28 @@ body {
     .navbar__toggle--active .navbar__toggle-bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-/*
-    .product-section {
-        height: 570vh;
+
+    */
+    .form__input {
+        width: 300px;
     }
 
-    .categories-section {
-        height: 300vh;
+    .form__textarea {
+        width: 300px;
     }
-        */
+}
+
+@media (max-width: 620px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero__fils {
+        max-width: 400px;
+        order: -1;
+    }
+
+    .hero__image {
+        width: 100%;
+    }
 }

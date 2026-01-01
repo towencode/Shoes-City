@@ -28,4 +28,16 @@ SlidebarBtn.addEventListener("click", () => {
     SlidebarBtn.classList.toggle("slidebar-toggle--active");
     Slidbar.classList.toggle("slidebar--active");
 
+});
+
+/*      SLIDEBAR ACTIVE     */
+
+const SlidebarLinks = document.querySelectorAll(".slidebar-navbar__menu .slidebar-navbar__link");
+
+SlidebarLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        SlidebarLinks.forEach(item => item.classList.remove("slidebar-navbar__link--acitve"));
+
+        link.classList.add("slidebar-navbar__link--acitve");
+    })
 })
