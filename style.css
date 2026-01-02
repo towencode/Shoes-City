@@ -155,10 +155,11 @@ body {
     border-bottom-right-radius: 20px;
     transition: all 0.3s ease;
     transform: translateX(-90%);
-    background: #00a6ff29;
+    /*background: #00a6ff29;*/
+    background: hsla(201, 86%, 49%, 0.161);
     backdrop-filter: blur(20px);
-    box-shadow: 3px 3px 10px rgb(28, 28, 28)
-                -3px -3px 10px rgb(79, 74, 74);
+    box-shadow: 2px 2px 8px hsl(193, 21%, 66%),
+                -2px -2px 8px hsl(193, 26%, 57%);
 }
 
 .slidebar--active {
@@ -451,8 +452,6 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    width: 100%;
-    height: 300px;
     padding: 20px;
     border-radius: 20px;
     transition: all 0.3s ease;
@@ -772,6 +771,27 @@ body {
     color: #fff;
 }
 
+.footer__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer__links-Privacy,
+.footer__links-Refund {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer__policy-text-separator {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 1000;
+}
+
 @media (max-width: 1000px) {
     .form__input {
         width: 500px;
@@ -794,6 +814,31 @@ body {
     .navbar__menu {
         display: none;
     }
+
+    .slidebar {
+        flex-direction: column;
+        transform: translateX(0);
+        transform: translateY(-90%);
+        position: fixed;
+        top: 0;
+        right: 10px;
+        max-width: 120px;
+        height: 500px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .slidebar--active {
+        transform: translateY(0);
+    }
+
+    .slidebar-navbar__menu {
+        flex-direction: column;
+        padding: 30px;
+        gap: 3.5rem;
+    }
+
     /*
     .navbar__menu {
         flex-direction: column;
@@ -853,6 +898,7 @@ body {
 }
 
 @media (max-width: 620px) {
+
     .hero {
         flex-direction: column;
     }
@@ -864,5 +910,38 @@ body {
 
     .hero__image {
         width: 100%;
+    }
+
+    .categories__menu {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .categories__item {
+        flex-direction: column;
+    }
+
+    .categories__item-image {
+        margin: 1rem 0;
+        width: 300px;
+        height: 300px;
+        order: -1;
+    }
+
+    .about__info {
+        width: 400px;
+    }
+
+    .about__logos {
+        width: 400px;
+        margin-bottom: 1rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        margin-top: 1rem;
+        order: -1;
     }
 }
