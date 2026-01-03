@@ -156,10 +156,10 @@ body {
     transition: all 0.3s ease;
     transform: translateX(-90%);
     /*background: #00a6ff29;*/
-    background: hsla(201, 86%, 49%, 0.161);
+    background: hsla(0, 0%, 100%, 0.161);
     backdrop-filter: blur(20px);
-    box-shadow: 2px 2px 8px hsl(193, 21%, 66%),
-                -2px -2px 8px hsl(193, 26%, 57%);
+    box-shadow: 2px 2px 4px hsl(0, 8%, 69%),
+                -2px -2px 4px hsl(0, 10%, 84%);
 }
 
 .slidebar--active {
@@ -943,5 +943,13 @@ body {
     .contact-form {
         margin-top: 1rem;
         order: -1;
+    }
+
+    .form__input {
+        width: 400px;
+    }
+
+    .form__textarea {
+        width: 400px;
     }
 }
