@@ -40,4 +40,4 @@ SlidebarLinks.forEach(link => {
 
         link.classList.add("slidebar-navbar__link--acitve");
     })
-})
+});
