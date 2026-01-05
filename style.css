@@ -88,6 +88,11 @@ body {
     border-color: gray;
 }
 
+.navbar__menu-link:active {
+    background: #4b5261;
+    color: #00a8ff;
+}
+
 .navbar__menu-link--active {
     display: flex;
     align-items: center;
@@ -293,12 +298,22 @@ body {
     color: #00a8ff;
     border-color: gray;
 }
+
+
+.hero__btn-review:active {
+    background: #79849b;
+    color: #145b7e;
+}
+
 .hero__btn-ordernow:hover {
     background: transparent;
     color: #e74c3c;
     border-color: gray;
 }
-
+.hero__btn-ordernow:active {
+     background: #212224;
+    color: #00aaff;
+}
 .hero__fils {
     display: flex;
     align-items: center;
