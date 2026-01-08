@@ -41,3 +41,28 @@ SlidebarLinks.forEach(link => {
         link.classList.add("slidebar-navbar__link--acitve");
     })
 });
+
+/*      WEBSITE SCROLL ACTIVE LINK      */
+
+const sections = document.querySelectorAll(`section`);
+const navlinks = document.querySelectorAll(`.navbar__menu-link`);
+
+const OFFSET = 60;
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        if (window.scrollY >= section.offsetTop - OFFSET) {
+            current = section.id;
+        }
+    });
+
+    navlinks.forEach(link => {
+        link.classList.remove("navbar__menu-link--active");
+
+        if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("navbar__menu-link--active");
+        }
+    })
+})
